@@ -1,0 +1,98 @@
+.select {
+  width: 100%;
+}
+
+.select--focus {
+  position: relative;
+  z-index: 50;
+}
+
+.select__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.select__value {
+  position: relative;
+
+  input {
+    position: relative;
+    z-index: 25;
+    padding: 8px 32px 8px 25px;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.select__value--focus {
+  .select__value-icon--right {
+    transform: translate(-150%, -50%) rotate(180deg);
+  }
+}
+
+.select__value-icon {
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+}
+
+.select__value-icon--left {
+  left: 0;
+  transform: translate(175%, -50%);
+  width: 14px;
+  height: 14px;
+  fill: $white;
+}
+
+.select__value-icon--right {
+  right: 0;
+  transform: translate(-125%, -50%);
+  width: 10px;
+  height: 6px;
+  transition: all 0.3s ease;
+}
+
+.select__options {
+  display: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.select__options--active {
+  position: absolute;
+  z-index: 20;
+  display: block;
+  top: 0;
+  left: 50%;
+  height: 200px;
+  transform: translate(-50%, -1px);
+  padding: 36px 13px 8px;
+  width: calc(100% + 2.5px);
+  background: $blue--medium;
+  border: 1px solid $blue--light;
+  border-radius: 12px;
+}
+
+.select__option--focus {
+  background: $blue--light;
+  // position: absolute;
+
+  left: 0;
+  // padding: 0 23px;
+  width: 100%;
+}
+
+.select__option {
+  margin: 0 0 8px;
+  font: 500 14px / 1.15 "Montserrat", sans-serif;
+  color: $white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 2px 20px;
+  &:last-of-type {
+    margin: 0;
+  }
+}

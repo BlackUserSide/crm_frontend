@@ -1,0 +1,105 @@
+.form-page {
+  position: relative;
+  height: 100vh;
+
+  * {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.form-page__login {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .75px;
+  max-width: 350px;
+  background: linear-gradient(135deg, #9f81b8, #8291c3, #83cdc9, #99cf80, #ceaa73);
+  border-radius: 40px;
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    border-radius: 70px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 20px 70px;
+    width: 100%;
+    background: $black;
+    border-radius: 40px;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+      padding: 60px 90px 70px;
+      border-radius: 70px;
+    }
+  }
+
+  .login-form__logo {
+    margin: 0 0 20px;
+
+    img {
+      width: 100px;
+      height: auto;
+
+      @media (min-width: 768px) {
+        width: 146px;
+        height: auto;
+      }
+    }
+  }
+
+  .login-form__title {
+    margin: 0 0 24px;
+    color: $white;
+  }
+
+  .login-form__input-block {
+    position: relative;
+    margin: 0 0 10px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(16px, -55%);
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  .login-form__input-block--password {
+    margin: 0 0 32px;
+  }
+  
+  .login-form__input {
+    padding: 15px 16px 15px 40px;
+    width: 100%;
+    font-weight: 500;
+    background: $blue--dark;
+    color: $white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #cacaca;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}

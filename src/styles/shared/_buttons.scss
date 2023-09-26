@@ -1,0 +1,140 @@
+.button {
+  margin: 1.5px;
+  font: 500 14px / 1.15 "Montserrat", sans-serif;
+  color: $white;
+  border-radius: 16px;
+  cursor: pointer;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  button {
+    padding: 8px 16px;
+    width: 100%;
+    font: inherit;
+    color: $white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  @media (max-width: 1301px) {
+    button {
+      padding: 0px 10px;
+    }
+  }
+}
+
+.button--hide {
+  animation: fadeOut 0.8s ease-in-out forwards;
+  animation-delay: 0.2s;
+  display: none;
+}
+
+.button--login {
+  button {
+    padding: 16px 0;
+    width: 225px;
+    font-size: 16px;
+    background: linear-gradient(
+      143.38deg,
+      rgba(225, 181, 245, 0.4) 8%,
+      rgba(207, 225, 161, 0.4) 88.36%
+    );
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+  }
+}
+
+.button--sum {
+  padding: 0.75px;
+  background: linear-gradient(135deg, #5b7464, #6a5373);
+
+  button {
+    background: $black--dark;
+  }
+}
+
+.button--green {
+  border-radius: 12px;
+  width: 100%;
+
+  button {
+    background: $green--dark;
+  }
+}
+
+.button--edit {
+  border-radius: 12px;
+  margin: 0;
+
+  button {
+    width: 100%;
+    background: $green--dark;
+  }
+}
+
+.button--delete {
+  border-radius: 18px;
+  margin: 0;
+
+  button {
+    width: 100%;
+    background: $pink--dark;
+  }
+}
+
+.button--pink {
+  border-radius: 12px;
+  width: 100%;
+
+  button {
+    background: $pink--dark;
+  }
+}
+
+.button--black {
+  border-radius: 12px;
+
+  button {
+    background: $blue--medium;
+  }
+}
+
+.button--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-10px, 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: $blue--medium;
+  color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+    display: none;
+  }
+}

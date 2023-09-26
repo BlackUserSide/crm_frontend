@@ -1,0 +1,61 @@
+{
+  "name": "spectrum-trafic",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mahdikhashan/vue3-click-outside": "^0.1.2",
+    "@types/nprogress": "^0.2.0",
+    "@vueuse/components": "^9.4.0",
+    "@vueuse/core": "^9.4.0",
+    "@vueuse/head": "^0.7.9",
+    "axios": "^0.27.2",
+    "click-outside-vue3": "^4.0.1",
+    "moment": "^2.29.4",
+    "notyf": "^3.10.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.22",
+    "socket.io-client": "^4.5.2",
+    "types": "^0.1.1",
+    "unplugin-vue-components": "^0.22.7",
+    "v-calendar": "^3.0.0-alpha.8",
+    "vue": "^3.2.37",
+    "vue-3-socket.io": "^1.0.5",
+    "vue-datepicker-ui": "^3.1.1",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.0.0",
+    "@types/node": "^18.7.16",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "json-server": "^0.17.1",
+    "node-sass": "^7.0.2",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-fonts": "^0.6.0",
+    "vite-plugin-pages": "^0.26.0",
+    "vue-tsc": "^0.40.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  }
+}

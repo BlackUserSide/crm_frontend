@@ -1,0 +1,40 @@
+.error-page {
+  position: relative;
+  height: 100vh;
+}
+
+.error-page__visual {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .2;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.error-page__content {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 0 0 16px;
+    width: 65%;
+    text-align: center;
+    color: $white;
+
+    @media (min-width: 992px) {
+      width: 35%;
+    }
+  }
+}

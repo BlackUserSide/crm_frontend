@@ -1,0 +1,103 @@
+/*----- basic styles ----- */
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: #1a1c2b;
+  color: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1600px;
+}
+
+#nprogress .bar {
+  height: 3px;
+  background: $white;
+}
+
+.page-template__body {
+  display: flex;
+}
+
+.page-template__content {
+  position: relative;
+  padding: 70px 20px 94px;
+  width: 100%;
+  min-height: 100vh;
+  background: #05060f;
+  transition: all 0.3s ease;
+
+  @media (min-width: 768px) {
+    margin: 0 0 0 250px;
+    padding: 50px 40px;
+    width: calc(100% - 250px);
+  }
+}
+
+/*----- scroll ----- */
+* {
+  scrollbar-color: $blue rgba($blue, 0.3);
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba($blue--dark, 0);
+
+  @media (max-width: 767) {
+    scrollbar-width: thin;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+
+  @media (max-width: 767) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $blue;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba($blue, 0.3);
+}
+
+/*----- fade transition ----- */
+.fade-fast-enter-active,
+.fade-fast-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-fast-enter-from,
+.fade-fast-leave-to {
+  opacity: 0;
+}
+
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-slow-enter-from,
+.fade-slow-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-slow-enter-active,
+  .fade-slow-leave-active {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-fast-enter-active,
+  .fade-fast-leave-active {
+    transition: none;
+  }
+}

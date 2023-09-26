@@ -1,0 +1,111 @@
+.table-page--main-billing {
+}
+
+.table-page__title-block,
+.table-page__select-block,
+.table-page__buttons-block {
+  display: flex;
+}
+
+.table-page__title-block {
+  flex-direction: column;
+  margin: 0 0 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.15;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.table-page__select-block {
+  align-items: center;
+  column-gap: 16px;
+  margin: 0 0 24px;
+
+  @media (min-width: 576px) {
+    margin: 0;
+  }
+
+  .table-select-block__title {
+    text-transform: uppercase;
+    color: $grey--dark;
+  }
+
+  .table-select-block__select {
+    position: relative;
+    width: 54px;
+  }
+
+  .table-select-block__select-body {
+    width: 100%;
+    background: $black--dark;
+    border: 2px solid $blue;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(#000, 0.75);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .table-select-block__select-body--active {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -14%);
+    padding: 6px 8px;
+    z-index: 1;
+  }
+
+  .table-select-block__select-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 6px 0;
+
+    svg {
+      width: 10px;
+      height: 6px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .table-select-block__select-count--active {
+    padding: 0;
+    margin: 0 0 4px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .table-select-block__select-list {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+    width: 100%;
+  }
+
+  .table-select-block__select-list--active {
+    display: block;
+  }
+
+  .table-select-block__select-item {
+    margin: 0 0 4px;
+  }
+
+  .table-select-block__select-item--hidden {
+    display: none;
+  }
+}
+
+.table-page__buttons-block {
+  align-items: center;
+  column-gap: 16px;
+  margin: 0 0 24px;
+}

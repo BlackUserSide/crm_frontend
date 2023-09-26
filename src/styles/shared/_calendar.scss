@@ -1,0 +1,26 @@
+#calendar-block {
+  .vc-container {
+    background: transparent;
+    border: none;
+  }
+
+  .vc-title {
+    font: 600 14px / 28px 'Montserrat', sans-serif;
+  }
+
+  .vc-weekday {
+    font: 700 12px / 1.2 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #6081d5;
+  }
+
+  .vc-day {
+    .vc-highlight {
+      background: #6081d5 !important;
+    }
+
+    span {
+      font: 600 10px / 1.2 'Montserrat', sans-serif;
+    }
+  }
+}

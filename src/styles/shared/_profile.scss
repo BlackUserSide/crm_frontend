@@ -1,0 +1,28 @@
+.user-profile {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin: 0 0 12px;
+}
+
+.user-profile__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(143.38deg, #9f81b8, #ceaa73);
+  border-radius: 50%;
+
+  span {
+    width: 700;
+    color: rgba($white, .7);
+  }
+}
+
+.user-profile__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: $green;
+}

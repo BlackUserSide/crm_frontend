@@ -1,0 +1,90 @@
+{
+  "user": {
+    "login": "admin",
+    "role": 0
+  },
+  "login": {
+    "login": "admin",
+    "password": "test"
+  },
+  "dashboard": {
+    "rows": [
+      {
+        "idClient": 23232,
+        "manager": "Tsygan",
+        "hostname": "test.com",
+        "product": "Hyalyronik (Суставы)",
+        "utm_medium": "test",
+        "utm_campaign": "test",
+        "createdAt": "2002-22-21 20:20:30",
+        "nameClient": "Clinet Oleg",
+        "phone": "+380931892782",
+        "status": 0
+      },
+      {
+        "idClient": 23232,
+        "manager": "Tsygan",
+        "hostname": "test.com",
+        "product": "Hyalyronik (Суставы)",
+        "utm_medium": "test",
+        "utm_campaign": "test",
+        "createdAt": "2002-22-21 20:20:30",
+        "nameClient": "Clinet Oleg",
+        "phone": "+380931892782",
+        "status": 0
+      },
+      {
+        "idClient": 23232,
+        "manager": "Tsygan",
+        "hostname": "test.com",
+        "product": "Hyalyronik (Суставы)",
+        "utm_medium": "test",
+        "utm_campaign": "test",
+        "createdAt": "2002-22-21 20:20:30",
+        "nameClient": "Clinet Oleg",
+        "phone": "+380931892782",
+        "status": 0
+      }
+    ],
+    "max_page": 10,
+    "typesLand": [],
+    "count": 100
+  },
+  "conversation_admin": {
+    "rows": [
+      {
+        "count": 10,
+        "name": "test",
+        "date": {
+          "trash": 10,
+          "approve": 10,
+          "rejected_vx": 10,
+          "canceled": 10,
+          "hold": 10,
+          "buyout": 10
+        }
+      }
+    ],
+    "max_page": 10,
+    "typesLand": [],
+    "count": 100
+  },
+  "conversation_offer": {
+    "max_page": 10,
+    "typesLand": [],
+    "count": 100,
+    "rows": [
+      {
+        "count": 10,
+        "name": "test",
+        "engName": "Test",
+        "trash": 10,
+        "approve": 10,
+        "rejected_vx": 10,
+        "canceled": 10,
+        "hold": 10,
+        "buyout": 10
+      }
+    ]
+  }
+}

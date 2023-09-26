@@ -1,0 +1,37 @@
+.input {
+  padding: 8px 24px;
+  width: 100%;
+  font: 500 14px / 1.15 'Montserrat', sans-serif;
+  background: $blue--medium;
+  color: $white;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  &.input--focus,
+  &:focus,
+  &:hover {
+    border: 1px solid $blue--light;
+    outline: none;
+  }
+
+  &::placeholder {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+/*----- Chrome, Safari, Edge, Opera -----*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*-----  Firefox -----*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
